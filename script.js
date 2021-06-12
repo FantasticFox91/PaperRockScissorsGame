@@ -58,7 +58,7 @@ function playRound(computerSelection,playerSelection){
          addDivResult("You win!!!");
          playerScore++;
          divScore.textContent = `Score: Computer ${computerScore} Player ${playerScore}`
-         console.log(playerScore, computerScore)
+         
     }
 
     if(playerSelection === "Rock" && computerSelection === "Paper" ||
@@ -68,7 +68,7 @@ function playRound(computerSelection,playerSelection){
          addDivResult("Computer win :(((")
          computerScore++
          divScore.textContent = `Score: Computer ${computerScore} Player ${playerScore}`
-         console.log(playerScore, computerScore)
+         
         }
     }else if(playerScore === 5){
         alert("You win. Press okay to restart the game")
@@ -83,15 +83,7 @@ function playRound(computerSelection,playerSelection){
     }
     
 }
-//Looping game
 
-// for(let i =0;i<=5;i++){
-//     var userPrompt = prompt('Chose Paper,Rock or Scissors');
-//     var playerSelection = userPrompt.toUpperCase();
-//     var computerSelection = computerPlay();
-//     playRound(computerSelection,playerSelection);
-// }
-
-console.log("Work in progress");
+warning("Work in progress");
 
 
