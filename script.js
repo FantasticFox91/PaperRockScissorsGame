@@ -71,14 +71,17 @@ function playRound(computerSelection,playerSelection){
          console.log(playerScore, computerScore)
         }
     }else if(playerScore === 5){
-        playerScore = 0;
-        computerScore = 0;
         alert("You win. Press okay to restart the game")
-    }else if(computerScore ===5){
         playerScore = 0;
         computerScore = 0;
+        divScore.textContent = `Score: Computer ${computerScore} Player ${playerScore}`
+    }else if(computerScore ===5){
         alert("You lose. Press okay to restart the game")
+        playerScore = 0;
+        computerScore = 0;
+        divScore.textContent = `Score: Computer ${computerScore} Player ${playerScore}`
     }
+    
 }
 //Looping game
 
