@@ -90,7 +90,5 @@ function playRound(computerSelection,playerSelection){
 // }
 
 console.log("Work in progress");
-if(playerScore === 2){
-    alert("hey")
-}
+
 
